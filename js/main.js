@@ -1,13 +1,3 @@
-/**
- * demo2.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
 {
 	setTimeout(() => document.body.classList.add('render'), 60);
 
@@ -24,9 +14,9 @@
 			this.totalImgs = this.imgs.length;
 			this.options = {
 				// Max and Min values for the time when to start the effect.
-				glitchStart: {min: 500, max: 4000},
+				glitchStart: {min: 500, max: 8000},
 				// Max and Min values of time that an element keeps each state.
-				glitchState: {min: 50, max: 200},
+				glitchState: {min: 50, max: 400},
 				// Number of times the glitch action is performed per iteration.
 				glitchTotalIterations: 6,
 				// The imgs slideshow interval.
@@ -110,7 +100,7 @@
 			this.DOM.letter = letter;
 			this.pos = pos;
 			this.imgs = letter.parentNode.dataset[`imagesChar-${this.pos+1}`].split(',');
-			this.imgs.push(letter.parentNode.dataset['imageDeath']);
+			this.imgs.push(letter.parentNode.dataset['imageLogo']);
 			let htmlstr = '';
 			for(const img of this.imgs) {
 				htmlstr += `<img src="${img}"/>`;

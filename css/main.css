@@ -21,12 +21,8 @@ body {
 
 .js body {
 	opacity: 0;
-	transition: opacity 0.3s;
-}
-
-.js body.demo-kidnap {
 	transition: background-color 0.3s, opacity 0.3s;
-} 
+}
 
 .js body.render {
 	opacity: 1;
@@ -248,7 +244,7 @@ main::before {
 .word span {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: 100%;
+	background-size: contain;
 }
 
 @media screen and (max-width: 50em) {
