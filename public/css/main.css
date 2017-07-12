@@ -257,6 +257,10 @@ main::before {
 		margin-right: 0;
 	}
 
+	.header-links .social-link:not(:last-child) {
+		margin-right: 0;
+	}
+
 	.moto {
 		display: none;
 	}
