@@ -1,7 +1,4 @@
 {
-	setTimeout(() => document.body.classList.add('render'), 60);
-
-	// Random number.
 	const getRandomInt = (min, max) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	};
@@ -144,5 +141,6 @@
 		}
 	}
 
+	setTimeout(() => document.body.classList.add('render'), 60);
 	Array.from(document.querySelectorAll('.word')).forEach((word) => new Word(word));
 };
