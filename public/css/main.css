@@ -258,7 +258,11 @@ main::before {
 	}
 
 	.header-links .social-link:not(:last-child) {
-		margin-right: 0;
+		margin-right: 10px;
+	}
+
+	.header-links .icon {
+		width: 1.2em;
 	}
 
 	.moto {
