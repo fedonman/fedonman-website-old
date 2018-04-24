@@ -705,18 +705,11 @@ footer.Work {
 }
 /* all iPhone */
 @media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
-  /* line 1108, ../sass/screen.scss */
-  .cat {
-    background-attachment: scroll;
-    background-size: contain;
-    background-position: 50vw 50%;
-    background-repeat: repeat-x;
-  }
-
   /* line 1115, ../sass/screen.scss */
   .cat p,
   .cat h3,
-  .cat h2 {
+  .cat h2,
+  .cat h1 {
     margin: 0 auto;
     padding: 0 0.5em;
   }
