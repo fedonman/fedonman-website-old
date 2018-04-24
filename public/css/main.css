@@ -560,7 +560,7 @@ footer.Work {
 
 @media only screen and (min-width: 480px) {
   /* line 980, ../sass/screen.scss */
-  header h1, .section h1, .section h2, .section h3, .section p {
+  /* header h1, .section h1, .section h2, .section h3, .section p {
     width: auto;
     font-size: 3.09vmin;
     top: 49.5%;
@@ -569,7 +569,7 @@ footer.Work {
     -o-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-  }
+  } */
 
   /* line 991, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
@@ -613,7 +613,7 @@ footer.Work {
 }
 @media only screen and (min-width: 321px) and (max-width: 640px) {
   /* line 1028, ../sass/screen.scss */
-  .section h1, .section h2, .section h3, .section p {
+  /* .section h1, .section h2, .section h3, .section p {
     top: 50%;
     font-size: 16px;
     -webkit-transform: translate(0, -50%);
@@ -621,7 +621,7 @@ footer.Work {
     -o-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-  }
+  } */
 
   /* line 1038, ../sass/screen.scss */
   .cat img {
@@ -720,21 +720,6 @@ footer.Work {
     top: 0 !important;
   }
 
-  /* line 1128, ../sass/screen.scss */
-  .browser {
-    padding: 0;
-  }
-
-  /* line 1132, ../sass/screen.scss */
-  .browser .ui, .browser .title {
-    display: none;
-  }
-
-  /* line 1136, ../sass/screen.scss */
-  .play {
-    display: none !important;
-  }
-
   /* line 1140, ../sass/screen.scss */
   .section .button {
     font-size: 16px;
@@ -772,59 +757,17 @@ footer.Work {
   footer .button {
     margin: 20px 10px 20px;
   }
-
-  /* line 1171, ../sass/screen.scss */
-  .video_container.iphone {
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
 }
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
-  /* line 1180, ../sass/screen.scss */
-  .browser, .browser.maxied, .browser.minied {
-    width: 300px;
-    height: auto;
-    padding: 0;
-  }
-
-  /* line 1186, ../sass/screen.scss */
-  .browser .window {
-    width: 300px;
-    height: auto;
-  }
-
-  /* line 1191, ../sass/screen.scss */
-  .browser .window video {
-    width: 300px;
-    height: auto;
-  }
-
-  /* line 1196, ../sass/screen.scss */
-  .video_container {
-    width: 300px;
-    height: 169px;
-  }
-
-  /* line 1201, ../sass/screen.scss */
-  .video_container video {
-    width: 300px;
-    height: auto;
-  }
-
-  /* line 1206, ../sass/screen.scss */
-  section article p, section article h2, section article h3, section article hr, section article blockquote {
+    section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 280px;
   }
 
-  /* line 1210, ../sass/screen.scss */
   section article p img {
     max-width: 280px;
   }
 
-  /* line 1214, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;

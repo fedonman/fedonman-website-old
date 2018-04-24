@@ -196,3 +196,45 @@
         font-size: 3.09vmin;
     }
 }
+
+@media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
+  .browser {
+    padding: 0;
+  }
+
+  .browser .ui, .browser .title {
+    display: none;
+  }
+
+  .play {
+    display: none !important;
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  .browser {
+    width: 300px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 300px;
+    height: auto;
+  }
+
+  .browser .window video {
+    width: 300px;
+    height: auto;
+  }
+
+  .video_container {
+    width: 300px;
+    height: 169px;
+  }
+
+  .video_container video {
+    width: 300px;
+    height: auto;
+  }
+}
