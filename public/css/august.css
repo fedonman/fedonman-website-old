@@ -1,0 +1,35 @@
+.section {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-height: 260px;
+    position: relative;
+    text-align: center;
+    background: #FFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h1, .section h2, .section h3, .section p {
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-top: 6em;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+/* line 1028, ../sass/screen.scss */
+    .section h1, .section h2, .section h3, .section p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /* line 980, ../sass/screen.scss */
+    .section h1, .section h2, .section h3, .section p {
+        width: auto;
+        font-size: 3.09vmin;
+    }
+}
