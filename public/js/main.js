@@ -8,15 +8,22 @@ const init = () => {
 
     document.querySelectorAll("a[rel=external]").forEach(el => el.setAttribute("target", "_blank"));
 
+    const body = document.querySelector("body");
     const frames = 28;
     let sectionCount = 0;
     const sectionElements = Array.from(document.getElementsByClassName("repeated-section"));
     const templateElements = [];
     const sectionHeight = sectionElements[0].clientHeight;
+    let currentImage = 0;
     let scrollCount = 0;
     let stillScrolling = true;
     
     const md = new MobileDetect(window.navigator.userAgent);
+
+    if(md.mobile()){
+        body.classList.add("mobile");
+        body.classList.add("f00");
+    }
     
     sectionElements.forEach(el => {
         templateElements.push(el.cloneNode(true));
@@ -32,10 +39,23 @@ const init = () => {
         }
     });
 
+    templateElements.unshift(document.getElementById("first-section"));
+
     const scroll = () => {
         if (stillScrolling) {
-            console.log(`${window.pageYOffset} - ${document.body.scrollHeight} - ${sectionHeight}`);
-            if (window.pageYOffset > document.body.scrollHeight - sectionHeight * 10) {
+            // console.log(`${window.pageYOffset} - ${document.body.scrollHeight} - ${sectionHeight}`);
+            const offset = window.pageYOffset;
+            if (md.mobile()) {
+                const nextImage = Math.floor(offset / sectionHeight) % (frames + 1);
+                if (currentImage !== nextImage) {
+                    const previousClass = "f"+zeroPad(currentImage, 2);
+                    const nextClass = "f"+zeroPad(nextImage, 2);
+                    body.classList.remove(previousClass);
+                    body.classList.add(nextClass);
+                    currentImage = nextImage;
+                }
+            }
+            if (offset > document.body.scrollHeight - sectionHeight * 10) {
                 scrollCount++;
                 const beginElement = document.getElementById("begin");
                 if (scrollCount >= 20) {
