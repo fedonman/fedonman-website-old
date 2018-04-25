@@ -1,26 +1,26 @@
-[debug] [2018-04-25T01:31:26.769Z] ----------------------------------------------------------------------
-[debug] [2018-04-25T01:31:26.770Z] Command:       /usr/bin/node /usr/bin/firebase deploy
-[debug] [2018-04-25T01:31:26.770Z] CLI Version:   3.18.4
-[debug] [2018-04-25T01:31:26.771Z] Platform:      linux
-[debug] [2018-04-25T01:31:26.771Z] Node Version:  v9.11.1
-[debug] [2018-04-25T01:31:26.771Z] Time:          Wed Apr 25 2018 04:31:26 GMT+0300 (EEST)
-[debug] [2018-04-25T01:31:26.771Z] ----------------------------------------------------------------------
+[debug] [2018-04-25T01:38:41.804Z] ----------------------------------------------------------------------
+[debug] [2018-04-25T01:38:41.806Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2018-04-25T01:38:41.806Z] CLI Version:   3.18.4
+[debug] [2018-04-25T01:38:41.807Z] Platform:      linux
+[debug] [2018-04-25T01:38:41.807Z] Node Version:  v9.11.1
+[debug] [2018-04-25T01:38:41.807Z] Time:          Wed Apr 25 2018 04:38:41 GMT+0300 (EEST)
+[debug] [2018-04-25T01:38:41.810Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-25T01:31:26.781Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-25T01:31:26.781Z] > authorizing via signed-in user
-[debug] [2018-04-25T01:31:26.782Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fedonman-website  
+[debug] [2018-04-25T01:38:41.818Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-25T01:38:41.818Z] > authorizing via signed-in user
+[debug] [2018-04-25T01:38:41.820Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fedonman-website  
   
- Wed Apr 25 2018 04:31:26 GMT+0300 (EEST)
-[debug] [2018-04-25T01:31:34.197Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-25T01:31:34.199Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fedonman-website/tokens  
+ Wed Apr 25 2018 04:38:41 GMT+0300 (EEST)
+[debug] [2018-04-25T01:38:43.261Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-25T01:38:43.265Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fedonman-website/tokens  
   
- Wed Apr 25 2018 04:31:34 GMT+0300 (EEST)
-[debug] [2018-04-25T01:31:35.068Z] <<< HTTP RESPONSE 200
+ Wed Apr 25 2018 04:38:43 GMT+0300 (EEST)
+[debug] [2018-04-25T01:38:44.148Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'fedonman-website'...
 [info] 
 [info] i  deploying hosting
 [info] i  hosting: preparing public directory for upload...
-[debug] [2018-04-25T01:31:36.597Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/fedonman-website/uploads/-LAuQLH_nt2VXwLKVNOx?fileCount=123&message=  
+[debug] [2018-04-25T01:38:45.851Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/fedonman-website/uploads/-LAuRz3X7_wt5WVDw9Gq?fileCount=123&message=  
   
- Wed Apr 25 2018 04:31:36 GMT+0300 (EEST)
+ Wed Apr 25 2018 04:38:45 GMT+0300 (EEST)

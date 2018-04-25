@@ -386,6 +386,10 @@ a.button {
   height: 80%;
 }
 
+.mobile .section#end {
+  height: 100%;
+}
+
 body #mobile-offset {
   display: none;
 }
@@ -403,10 +407,10 @@ body.mobile::before {
   background-repeat: no-repeat; 
   background-position: 50% 50%;
   background-size: 30% auto;
-  -webkit-transition:background-position .1s ease-in;  
-  -moz-transition:background-position .1s ease-in;  
-  -o-transition:background-position .1s ease-in;  
-  transition:background-position .1s ease-in; 
+  -webkit-transition:background-position .3s ease-in;  
+  -moz-transition:background-position .3s ease-in;  
+  -o-transition:background-position .3s ease-in;  
+  transition:background-position .3s ease-in; 
 }
 
 body.mobile h1, body.mobile h2, body.mobile h3, body.mobile h4, body.mobile p {
