@@ -25,7 +25,6 @@
 }
 
 .section h1, .section h2, .section h3, .section p {
-  display: inline-block;
   top: 48%;
   margin: 0px auto;
   position: relative;

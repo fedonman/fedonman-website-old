@@ -85,14 +85,13 @@ body, html {
   font-family: 'Orator';
   font-weight: 400;
   text-transform: lowercase;
-  -webkit-transition: font-size .2s;
-  -o-transition: font-size .2s;
-  -moz-transition: font-size .2s;
-  -ms-transition: font-size .2s;
-  transition: font-size .2s;
+  -webkit-transition: font-size .2s, background-position .2s;
+  -o-transition: font-size .2s, background-position .2s;
+  -moz-transition: font-size .2s, background-position .2s;
+  -ms-transition: font-size .2s, background-position .2s;
+  transition: font-size .2s, background-position .2s;
   color: #000;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   background: white;
 }
 
