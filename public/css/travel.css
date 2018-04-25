@@ -33,10 +33,6 @@
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.15);
     position: relative;
-    -webkit-transition: width 800ms, height 800ms, padding 100ms;
-    -moz-transition: width 800ms, height 800ms, padding 100ms;
-    -o-transition: width 800ms, height 800ms, padding 100ms;
-    -ms-transition: width 800ms, height 800ms, padding 100ms;
     transition: width 800ms, height 800ms, padding 100ms;
   }
   
@@ -70,9 +66,6 @@
     display: inline-block;
     width: 11px;
     height: 11px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
     border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
@@ -124,10 +117,6 @@
     width: auto;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-transition: height 800ms;
-    -moz-transition: height 800ms;
-    -o-transition: height 800ms;
-    -ms-transition: height 800ms;
     transition: height 800ms;
   }
   
@@ -139,10 +128,6 @@
   /* line 830, ../sass/screen.scss */
   video {
     position: relative;
-    -webkit-transition: height 800ms, width 800ms;
-    -moz-transition: height 800ms, width 800ms;
-    -o-transition: height 800ms, width 800ms;
-    -ms-transition: height 800ms, width 800ms;
     transition: height 800ms, width 800ms;
   }
   
@@ -169,10 +154,6 @@
     height: auto;
     width: 640px;
     display: block;
-    -webkit-transition: height 800ms, width 800ms;
-    -moz-transition: height 800ms, width 800ms;
-    -o-transition: height 800ms, width 800ms;
-    -ms-transition: height 800ms, width 800ms;
     transition: height 800ms, width 800ms;
   }
   

@@ -6,7 +6,7 @@ const init = () => {
 
     window.scrollTo(0, 0);
 
-    document.querySelectorAll("a[rel=external]").forEach(el => el.setAttribute("target", "_blank"));
+    // document.querySelectorAll("a[rel=external]").forEach(el => el.setAttribute("target", "_blank"));
 
     const body = document.querySelector("body");
     const frames = 28;
