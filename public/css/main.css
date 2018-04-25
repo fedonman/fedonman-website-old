@@ -378,6 +378,52 @@ a.button {
   background-image: url(../img/shapes/shapes00043.png);
 }
 
+.mobile .cat {
+  background-image: none;
+}
+
+.mobile .section {
+  height: 80%;
+}
+
+body #mobile-offset {
+  display: none;
+}
+
+body.mobile::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index:1;
+  background-image: url(../img/shapes/shapes00000.png); 
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+  background-size: 30% auto;
+  -webkit-transition:background-position .1s ease-in;  
+  -moz-transition:background-position .1s ease-in;  
+  -o-transition:background-position .1s ease-in;  
+  transition:background-position .1s ease-in; 
+}
+
+body.mobile h1, body.mobile h2, body.mobile h3, body.mobile h4, body.mobile p {
+  z-index: 2;
+}
+
+body.mobile #mobile-offset {
+  display: block;
+  box-sizing: border-box;
+  height: 50%;
+  width: 100%;
+  min-height: 260px;
+  position: relative;
+  text-align: center;
+  background: #FFF;
+}
+
 /* line 428, ../sass/screen.scss */
 nav {
   background: #000;
@@ -735,11 +781,6 @@ footer.Work {
   /* line 1150, ../sass/screen.scss */
   footer em {
     display: none;
-  }
-
-  /* line 1154, ../sass/screen.scss */
-  .section {
-    height: 100%;
   }
 
   /* line 1158, ../sass/screen.scss */
