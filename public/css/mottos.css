@@ -1,7 +1,11 @@
+ul {
+	list-style-type: none;
+	height: auto;
+}
 .section {
 	display: block;
 	box-sizing: border-box;
-	height: 50%;
+	height: 50vh;
 	width: 100%;
 	min-height: 260px;
 	position: relative;
@@ -22,10 +26,6 @@ li.section:nth-of-type(even) {
 	position: relative;
 	font-size: 16px;
 	line-height: 1.4em;
-}
-ul {
-	list-style-type: none;
-	height: 100%;
 }
 @media screen and (min-width: 920px) {
   .section h1, .section h2, .section h3, .section p {

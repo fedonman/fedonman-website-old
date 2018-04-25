@@ -62,6 +62,10 @@ const init = () => {
                     const endElement = document.getElementById("end");
                     endElement.style.display = "block";
                     beginElement.appendChild(endElement);
+                    if (!md.mobile()) {
+                        const newClass = zeroPad(sectionCount, 2);
+                        endElement.querySelector(".cat").classList.add("f"+newClass);
+                    }
                     stillScrolling = false;
                     return false;
                 }
