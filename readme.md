@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/fedonman/fedonman-website">
     <img
-      src=""
+      src="https://fedonman.com/website-screenshot.png"
       height="420"
       alt="fedonman-website"
       title="fedonman-website"
