@@ -1,0 +1,13 @@
+{
+  "video": {
+    "title": "LIVE FULL TIME",
+    "overlay": "../images/travel/play_button.png",
+    "poster": "../images/travel/poster.png",
+    "sources": [
+      {
+        "src": "../videos/travel/travel.mp4",
+        "type": "video/mp4"
+      }
+    ]
+  }
+}
