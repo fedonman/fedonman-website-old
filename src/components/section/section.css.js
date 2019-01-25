@@ -14,6 +14,7 @@ export const Inner = styled.div`
   width: 100%;
   height: 100%;
   min-height: 260px;
+  padding: 0 20px;
   background-position: 50% 50%;
   background-attachment: fixed;
   background-repeat: no-repeat;

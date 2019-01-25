@@ -5,6 +5,7 @@ export const Browser = styled.div`
   padding: 35px 1px 1px;
   margin: 40px auto;
   width: 640px;
+  max-width: 90%;
   height: auto;
   overflow: hidden;
   background: #fff;
@@ -93,7 +94,7 @@ export const Overlay = styled.span`
 
 export const Video = styled.video`
   display: block;
-  width: 640px;
+  width: 100%;
   height: auto;
   background: #000;
   transition: height 800ms, width 800ms;

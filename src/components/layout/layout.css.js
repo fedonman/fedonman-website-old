@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Main = styled.main`
   text-align: center;
 
   h1, h2 {
     font-size: 1.7em;
-    line-height: 1;
+    line-height: 1.4;
     text-transform: lowercase;
   }
 
@@ -14,7 +15,6 @@ export const Main = styled.main`
     text-decoration: none;
     border-bottom: 0em solid black;
     padding: 0 0.05em;
-    line-height: 1em;
     box-shadow: inset 0 0px 0 black;
     transition: all 300ms ease-in-out;
     color: black;
@@ -27,6 +27,24 @@ export const Main = styled.main`
     box-shadow: inset 0 -1.1em 0 black;
     transition-duration: 100ms;
   }
+
+  ${MEDIA.DESKTOP`
+    h1, h2 {
+      font-size: 1.5em;
+    }
+  `};
+
+  ${MEDIA.TABLET`
+    h1, h2 {
+      font-size: 1.3em;
+    }
+  `};
+
+  ${MEDIA.PHONE`
+    h1, h2 {
+      font-size: 1.1em;
+    }
+  `};
 `;
 
 export const FlexMain = styled(Main)`
