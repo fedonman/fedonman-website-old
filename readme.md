@@ -39,11 +39,8 @@ npm run build
 
 # To run compiled
 npm run serve
-
-# To test SSR (for Lighthouse etc.)
-npm run ssr
 ```
 
 ## Author
 
-* Vyron Vasileiadis ([@fedonman](https://instagram.com/fedonman))
+* Vyron Vasileiadis - [email](mailto:hi@fedonman.com), [linkedin](https://wwww.linkedin.com/in/fedonman), [instagram](https://instagram.com/fedonman)
