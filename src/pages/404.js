@@ -10,7 +10,9 @@ const Back2 = styled.h2`
 const NotFound = () => (
   <Layout flow="flex">
     <h1>Not found</h1>
-    <Back2><Link to="/">Back</Link></Back2>
+    <Back2>
+      <Link to="/">Back</Link>
+    </Back2>
   </Layout>
 );
 

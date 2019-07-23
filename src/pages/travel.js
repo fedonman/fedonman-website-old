@@ -24,9 +24,9 @@ const Travel = ({ data }) => {
     overlay: overlay.publicURL,
     poster: poster.publicURL,
     sources: sources.map(source => ({
-        src: source.src.publicURL,
-        type: source.type
-      }))
+      src: source.src.publicURL,
+      type: source.type,
+    })),
   };
 
   return (
@@ -34,7 +34,9 @@ const Travel = ({ data }) => {
       <Title>Living full time is closed than you think</Title>
       <VideoPlayer {...video} />
       <Subtitle>Contact me for more info!</Subtitle>
-      <Back><Link to="/">Back</Link></Back>
+      <Back>
+        <Link to="/">Back</Link>
+      </Back>
     </Layout>
   );
 };

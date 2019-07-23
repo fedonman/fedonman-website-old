@@ -14,30 +14,38 @@ class August extends PureComponent {
 
     this.state = {
       diff: 0,
-      suffix: ''
+      suffix: '',
     };
   }
 
   componentDidMount() {
     const today = moment();
-    const lastAugust = (today.month() <= 6) ? '01/08' + (today.year() - 1) : '01/08' + today.year();
+    const lastAugust =
+      today.month() <= 6
+        ? '01/08' + (today.year() - 1)
+        : '01/08' + today.year();
     const august = moment(lastAugust, 'DD/MM/YYYY');
-    const diff = today.diff(august, "days") + 1;
+    const diff = today.diff(august, 'days') + 1;
     let suffix = 'th';
     if (diff === 1) suffix = 'st';
     if (diff === 2) suffix = 'nd';
     if (diff === 3) suffix = 'rd';
     this.setState({
       diff: diff,
-      suffix: suffix
+      suffix: suffix,
     });
   }
 
   render() {
     return (
       <Layout flow="flex">
-          <h1>Today is the {this.state.diff}{this.state.suffix} of August</h1>
-          <Back><Link to="/">Back</Link></Back>
+        <h1>
+          Today is the {this.state.diff}
+          {this.state.suffix} of August
+        </h1>
+        <Back>
+          <Link to="/">Back</Link>
+        </Back>
       </Layout>
     );
   }

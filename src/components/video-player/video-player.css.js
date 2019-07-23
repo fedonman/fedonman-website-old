@@ -47,7 +47,7 @@ export const Buttons = styled.ul`
   }
 
   & > li:hover:after {
-    content: "";
+    content: '';
     width: 7px;
     height: 7px;
     border-radius: 4px;
@@ -60,7 +60,7 @@ export const Buttons = styled.ul`
 `;
 
 export const Close = styled.li`
-  background-color: #FF5011;
+  background-color: #ff5011;
 `;
 
 export const Minimize = styled.li`
@@ -68,7 +68,7 @@ export const Minimize = styled.li`
 `;
 
 export const Maximize = styled.li`
-  background-color: #4EE949;
+  background-color: #4ee949;
 `;
 
 export const Screen = styled.div`
@@ -87,7 +87,10 @@ export const Overlay = styled.span`
   position: absolute;
   left: 0;
   top: 0;
-  background: ${props => props.isPlaying ? `url(${props => props.overlayImage}) no-repeat center center;` : "none"};
+  background: ${props =>
+    props.isPlaying
+      ? `url(${props => props.overlayImage}) no-repeat center center;`
+      : 'none'};
   z-index: 50;
   cursor: pointer;
 `;

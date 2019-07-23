@@ -4,7 +4,8 @@ import MEDIA from 'helpers/mediaTemplates';
 export const Main = styled.main`
   text-align: center;
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 1.7em;
     line-height: 1.4;
     text-transform: lowercase;

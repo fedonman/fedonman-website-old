@@ -14,17 +14,22 @@ const Mottos = ({ data }) => {
       <Section
         markdown={firstSection}
         backgroundColor={`${BG_COLOR_ODD}`}
-        key={0} />
-      {sections.map((markdown, i) =>
+        key={0}
+      />
+      {sections.map((markdown, i) => (
         <Section
           markdown={markdown}
           backgroundColor={i % 2 === 0 ? `${BG_COLOR_EVEN}` : `${BG_COLOR_ODD}`}
-          key={i + 1} />
-      )}
+          key={i + 1}
+        />
+      ))}
       <Section
         markdown={lastSection}
-        backgroundColor={(sections.length % 2) === 0 ?  `${BG_COLOR_EVEN}` : `${BG_COLOR_ODD}`}
-        key={sections.length + 1} />
+        backgroundColor={
+          sections.length % 2 === 0 ? `${BG_COLOR_EVEN}` : `${BG_COLOR_ODD}`
+        }
+        key={sections.length + 1}
+      />
     </Layout>
   );
 };

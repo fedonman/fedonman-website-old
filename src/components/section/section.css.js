@@ -19,7 +19,7 @@ export const Inner = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 25vmin auto;
-  background-image: url(${props => props.backgroundImage || ""});
+  background-image: url(${props => props.backgroundImage || ''});
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Head from 'components/head';
 import GlobalStyle from 'global.css.js';
-import { Main, FlexMain } from './layout.css'
+import { Main, FlexMain } from './layout.css';
 
 const Layout = ({ data, children, flow }) => {
-  if (flow === "normal") {
+  if (flow === 'normal') {
     return (
       <Main>
         <GlobalStyle />
@@ -28,7 +28,7 @@ const Layout = ({ data, children, flow }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   data: PropTypes.object.isRequired,
-  flow: PropTypes.oneOfType(["normal", "flex"])
+  flow: PropTypes.oneOfType(['normal', 'flex']),
 };
 
 const LayoutWithQuery = props => (
