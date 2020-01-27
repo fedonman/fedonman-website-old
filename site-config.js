@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteTitle: `Vyron Vasileiadis | Technology Entrepreneur`,
   siteTitleShort: `fedonman`,
-  siteDescription: `Personal space of Vyron Vasileiadis aka fedonman, a Web & IoT Developer, Educator and Entrepreneur based in Athens, Greece.`,
+  siteDescription: `Personal space of Vyron Vasileiadis aka fedonman, a Web, AI & IoT Developer, Microsoft Certified Trainer and Entrepreneur based in Athens, Greece.`,
   siteUrl: `https://fedonman.com`,
   themeColor: `#3ba9ba`,
   backgroundColor: `#ffffff`,
