@@ -6,6 +6,7 @@ import GlobalStyle from 'global.css.js';
 import { Main, FlexMain } from './layout.css';
 
 const Layout = ({ data, children, flow }) => {
+  console.log(data);
   if (flow === 'normal') {
     return (
       <Main>

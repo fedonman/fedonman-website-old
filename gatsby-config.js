@@ -9,8 +9,27 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-eslint`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+        ],
+      },
+    },
+    // `gatsby-plugin-eslint`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,6 +39,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-catch-links',
     `gatsby-plugin-webpack-size`,
     {
       resolve: `gatsby-plugin-react-svg`,
