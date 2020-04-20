@@ -2,10 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Head from 'components/head';
+import PostHeader from 'components/blog/postHeader';
+import PostBody from 'components/blog/postBody';
 
 import GlobalStyle from 'global.css.js';
 import { Header, Body } from './post.css';
-
 
 class PostTemplate extends React.Component {
   render() {
@@ -15,14 +16,12 @@ class PostTemplate extends React.Component {
     // const description = postDescription !== null ? postDescription : subtitle
 
     return (
-      <div>
+      <article>
         <Head pageTitle={postTitle}/>
         <GlobalStyle />
-        <Header>
-          {postTitle}
-        </Header>
-        <h2>{postDescription}</h2>
-      </div>
+        <PostHeader postTitle={postTitle} />
+        <PostBody html={post.html}/>
+      </article>
     )
   }
 }

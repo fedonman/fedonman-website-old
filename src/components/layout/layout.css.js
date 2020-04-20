@@ -6,7 +6,7 @@ export const Main = styled.main`
 
   h1,
   h2 {
-    font-size: 1.7em;
+    font-size: 2.1rem;
     line-height: 1.4;
     text-transform: lowercase;
   }
@@ -29,21 +29,27 @@ export const Main = styled.main`
     transition-duration: 100ms;
   }
 
+  ${MEDIA.XL`
+    h1, h2 {
+      font-size: 1.7rem;
+    }
+  `};
+
   ${MEDIA.DESKTOP`
     h1, h2 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
   `};
 
   ${MEDIA.TABLET`
     h1, h2 {
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
   `};
 
   ${MEDIA.PHONE`
     h1, h2 {
-      font-size: 1.1em;
+      font-size: 1.1rem;
     }
   `};
 `;

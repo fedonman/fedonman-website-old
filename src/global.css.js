@@ -15,6 +15,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    font-size: 16px;
+  }
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -31,7 +35,6 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
   }
@@ -40,10 +43,6 @@ export default createGlobalStyle`
   article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
     display: block;
-  }
-
-  html {
-    font-size: 16px;
   }
 
   body {
@@ -81,7 +80,7 @@ export default createGlobalStyle`
     border-spacing: 0;
   }
 
-  pre {
+  /* pre {
     display: block;
     padding: 2rem;
     margin-top: 4rem;
@@ -89,8 +88,7 @@ export default createGlobalStyle`
     font-size: 85%;
     line-height: 1.45;
     border-radius: 5px;
-    color: ${PRIMARY_COLOR};
     border: 1px solid #ddd;
     font-family: "SFMono-Regular", "Liberation Mono", Courier, monospace;
-  }
+  } */
 `;

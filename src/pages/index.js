@@ -6,10 +6,7 @@ import { graphql } from 'gatsby';
 import { BG_COLOR_EVEN, BG_COLOR_ODD } from '../constants/theme';
 
 const Index = ({ data }) => {
-  const sections = data.homeJson.sections;
-  const firstSection = data.homeJson.firstSection;
-  const lastSection = data.homeJson.lastSection;
-  const backgroundImages = data.homeJson.backgroundImages;
+  const { sections, firstSection, lastSection, backgroundImages} = data.homeJson;
   const loops = 7;
   const loopArray = Array(loops)
     .fill(0)
