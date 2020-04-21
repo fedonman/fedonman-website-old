@@ -2,11 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Head from 'components/head';
-import PostHeader from 'components/blog/postHeader';
-import PostBody from 'components/blog/postBody';
+import PostHeader from 'components/blog/post-header';
+import PostBody from 'components/blog/post-body';
 
 import GlobalStyle from 'global.css.js';
-import { Header, Body } from './post.css';
 
 class PostTemplate extends React.Component {
   render() {
@@ -17,9 +16,9 @@ class PostTemplate extends React.Component {
 
     return (
       <article>
-        <Head pageTitle={postTitle}/>
+        <Head pageTitle={postTitle} />
         <GlobalStyle />
-        <PostHeader postTitle={postTitle} />
+        <PostHeader title={postTitle} />
         <PostBody html={post.html}/>
       </article>
     )

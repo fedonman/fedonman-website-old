@@ -50,30 +50,29 @@ module.exports = {
       },
     },
     {
-      // resolve: `gatsby-plugin-prefetch-google-fonts`,
-      // options: {
-      //   fonts: [
-      //     {
-      //       family: `Lora`,
-      //       variants: [`700`],
-      //       subsets: [`latin`],
-      //     },
-      //     {
-      //       family: `Montserrat`,
-      //       variants: [`400`, `600`],
-      //       subsets: [`latin`]
-      //     },
-      //   ],
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
           families: [
             'Montserrat:400,700,900',
-            'Lora:700',
+            'Lora:400,700',
             'Fira Code:400'
           ],
         },
       },
-    }
+    },
+    // {
+    //   resolve: `gatsby-plugin-intl`,
+    //   options: {
+    //     // language JSON resource path
+    //     path: `${__dirname}/content/intl`,
+    //     // supported language
+    //     languages: [`en`, `gr`],
+    //     // language file path
+    //     defaultLanguage: `en`,
+    //     // option to redirect to `/en` when connecting `/`
+    //     redirect: false,
+    //   },
+    // },
   ],
 };

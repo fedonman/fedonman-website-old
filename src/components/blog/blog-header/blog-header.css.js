@@ -6,16 +6,25 @@ export const Header = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 50vh;
+  align-items: flex-start;
+  height: 100vh;
   width: 100%;
   min-height: 260px;
   background-color: ${BG_COLOR_EVEN};
+  color: ${TEXT_COLOR};
+  font-family: "Lora", serif;
+  text-align: left;
+  padding: 0 10%;
 `;
 
 export const Title = styled.h1`
-  color: ${TEXT_COLOR};
   font-size: 3.5rem;
-  text-align: center;
-  width: 95%;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
 `;
+
+export const Subtitle = styled.p`
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+`

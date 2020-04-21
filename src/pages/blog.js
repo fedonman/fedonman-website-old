@@ -1,36 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Layout from 'components/layout';
-import Section from 'components/section';
 import { graphql } from 'gatsby';
-import { BG_COLOR_EVEN, BG_COLOR_ODD } from 'constants/theme';
+
+import Head from 'components/head';
+import BlogHeader from 'components/blog/blog-header';
+import BlogBody from 'components/blog/blog-body/blog-body';
+
+import GlobalStyle from 'global.css.js';
 
 const Blog = ({ data }) => {
-    const posts = data.allMarkdownRemark.edges
-    const items = []
-    posts.forEach(post => {
-        items.push(`## [${post.node.frontmatter.title}](${post.node.fields.slug})`)
-    })
+    const posts = data.allMarkdownRemark.edges;
 
     return (
-        <Layout> 
-            <Section 
-                markdown={data.blogJson.firstSection}
-                backgroundColor={BG_COLOR_EVEN}
+        <main>
+            <Head />
+            <GlobalStyle />
+            <BlogHeader 
+              title="Digital Stories" 
+              intro="Hey, I'm Vyron." 
+              details="Welcome to my blog. Here you can find tutorials on Web Development, Machine & Deep Learning and Microsoft Azure." 
             />
-            {items.map((post, i) => (
-                <Section
-                    markdown={post}
-                    backgroundColor={
-                        i % 2 === 0
-                          ? `${BG_COLOR_ODD}`
-                          : `${BG_COLOR_EVEN}`
-                      }
-                    key={i}
-                />
-                )
-            )}
-        </Layout>
+            <BlogBody 
+              posts={posts}
+            />
+        </main>
     );
 };
 

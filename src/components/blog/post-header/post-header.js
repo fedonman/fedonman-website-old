@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header, Title } from './postHeader.css';
+import { Header, Title } from './post-header.css';
 
-const PostHeader = ({ postTitle }) => {
+const PostHeader = ({ title }) => {
   return (
     <Header>
-      <Title>{postTitle}</Title>
+      <Title>{title}</Title>
     </Header>
   );
 };
 
 PostHeader.propTypes = {
-  postTitle: PropTypes.string
+  title: PropTypes.string
 };
 
 export default PostHeader;

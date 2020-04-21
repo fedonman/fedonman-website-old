@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Body } from './postBody.css';
+import { Body } from './post-body.css';
 
 const PostBody = ({ html }) => {
   // const { subtitle, author } = this.props.data.site.siteMetadata;
@@ -15,8 +15,8 @@ const PostBody = ({ html }) => {
   );
 };
 
-// PostBody.propTypes = {
-//   html: PropTypes.string
-// };
+PostBody.propTypes = {
+  html: PropTypes.string
+};
 
 export default PostBody;

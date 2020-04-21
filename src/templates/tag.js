@@ -1,22 +1,16 @@
-import React from 'react'
-// import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-// import Layout from '../components/Layout'
-// import Sidebar from '../components/Sidebar'
-// import TagTemplateDetails from '../components/TagTemplateDetails'
-// import HomeButton from './../components/HomeButton/HomeButton';
+import React from 'react';
+import { graphql } from 'gatsby';
 
-class TagTemplate extends React.Component {
-  render() {
-    const { tag } = this.props.pageContext
+import GlobalStyle from 'global.css.js';
 
-    return (
-      <div>
-        {tag}
-      </div>
-    )
-  }
-}
+const TagTemplate = ({ data }) => {
+  const { tag } = this.props.pageContext;
+  return (
+    <div>
+      {tag}
+    </div>
+  );
+};
 
 export default TagTemplate
 
