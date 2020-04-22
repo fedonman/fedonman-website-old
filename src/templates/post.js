@@ -18,7 +18,7 @@ class PostTemplate extends React.Component {
       <article>
         <Head pageTitle={postTitle} />
         <GlobalStyle />
-        <PostHeader title={postTitle} />
+        <PostHeader post={post} />
         <PostBody html={post.html}/>
       </article>
     )
