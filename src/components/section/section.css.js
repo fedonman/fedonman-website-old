@@ -16,7 +16,7 @@ export const Inner = styled.div`
   min-height: 260px;
   padding: 0 1.5rem;
   ${props => {
-    if (CSS.supports('background-attachment', 'fixed') && props.backgroundImage) {
+    if (typeof window !== 'undefined' && window.CSS.supports('background-attachment', 'fixed') && props.backgroundImage) {
       return css`
         background-position: 50% 50%;
         background-attachment: fixed;
