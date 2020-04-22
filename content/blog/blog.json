@@ -1,3 +1,6 @@
 {
-    "firstSection": "# Blog"
+    "title": "Digital Stories",
+    "intro": "Hey, I'm Vyron.",
+    "details": "Welcome to my blog. Here you can find tutorials on Web Development, Machine & Deep Learning and Microsoft Azure.",
+    "backToMain": "Back to main website"
 }

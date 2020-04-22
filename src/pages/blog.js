@@ -10,15 +10,17 @@ import GlobalStyle from 'global.css.js';
 
 const Blog = ({ data }) => {
     const posts = data.allMarkdownRemark.edges;
+    const { title, intro, details, backToMain } = data.blogJson;
 
     return (
         <main>
             <Head />
             <GlobalStyle />
-            <BlogHeader 
-              title="Digital Stories" 
-              intro="Hey, I'm Vyron." 
-              details="Welcome to my blog. Here you can find tutorials on Web Development, Machine & Deep Learning and Microsoft Azure." 
+            <BlogHeader
+              title={title}
+              intro={intro} 
+              details={details}
+              backToMain={backToMain} 
             />
             <BlogBody 
               posts={posts}
@@ -36,7 +38,10 @@ export default Blog;
 export const query = graphql`
     query BlogQuery {
         blogJson {
-            firstSection
+            title,
+            intro,
+            details,
+            backToMain
         }
         allMarkdownRemark(
             limit: 1000

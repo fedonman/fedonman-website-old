@@ -54,8 +54,8 @@ module.exports = {
       options: {
         google: {
           families: [
-            'Montserrat:400,700,900',
-            'Lora:400,700',
+            'Montserrat:400,700',
+            'Lora:400,600,700',
             'Fira Code:400'
           ],
         },

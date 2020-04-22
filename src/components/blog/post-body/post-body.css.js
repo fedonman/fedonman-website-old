@@ -10,12 +10,28 @@ export const Body = styled.main`
   padding: 6.25rem 0;
   font-family: 'Montserrat';
 
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
   p {
     /* text-align: justify; */
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 2rem;
+  }
+
+  strong {
+    font-weight: 700;
   }
 
   a {
@@ -27,6 +43,18 @@ export const Body = styled.main`
   a:hover, a:focus, a:active {
     text-decoration: underline;
     outline-width: 0;
+  }
+
+  ul {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    /* list-style: disc inside; */
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  ul li {
+    margin-bottom: 1rem;
   }
 
   .gatsby-highlight {

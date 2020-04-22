@@ -1,16 +1,26 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import Head from 'components/head';
+import TagHeader from 'components/blog/tag-header';
+import BlogBody from 'components/blog/blog-body';
+
 import GlobalStyle from 'global.css.js';
 
-const TagTemplate = ({ data }) => {
-  const { tag } = this.props.pageContext;
-  return (
-    <div>
-      {tag}
-    </div>
-  );
-};
+class TagTemplate extends React.Component {
+  render() {
+    const { tag } = this.props.pageContext;
+    const posts = this.props.data.allMarkdownRemark.edges
+    return (
+      <article>
+          <Head pageTitle={tag} />
+          <GlobalStyle />
+          <TagHeader title={tag} />
+          <BlogBody posts={posts} />
+      </article>
+    );
+  }
+}
 
 export default TagTemplate
 
@@ -31,11 +41,13 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
+            tagSlugs
           }
           frontmatter {
             title
             date
             description
+            tags
           }
         }
       }

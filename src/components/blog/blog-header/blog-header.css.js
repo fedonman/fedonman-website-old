@@ -27,4 +27,15 @@ export const Subtitle = styled.p`
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 2rem;
+
+  a {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
 `
