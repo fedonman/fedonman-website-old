@@ -17,11 +17,21 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
+              showCaptions: true,
+              quality: 80,
+              withWebp: true
             },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow"
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -54,9 +64,9 @@ module.exports = {
       options: {
         google: {
           families: [
-            'Montserrat:400,700',
-            'Lora:400,600,700',
-            'Fira Code:400'
+            'Montserrat:400,700:latin',
+            'Lora:400,600,700:latin',
+            'Fira Code:400:latin'
           ],
         },
       },

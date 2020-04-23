@@ -9,24 +9,25 @@ export const Body = styled.main`
   margin: 0 auto;
   padding: 6.25rem 0;
   font-family: 'Montserrat';
+  text-align: justify;
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
 
   p {
     /* text-align: justify; */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     margin-bottom: 2rem;
   }
 
@@ -46,7 +47,7 @@ export const Body = styled.main`
   }
 
   ul {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     /* list-style: disc inside; */
     margin-top: -1rem;
@@ -63,6 +64,10 @@ export const Body = styled.main`
 
   code[class*="language-"], pre[class*="language-"] {
     font-family: 'Fira Code';
+  }
+
+  figcaption {
+    text-align: center;
   }
 
   ${MEDIA.XL`

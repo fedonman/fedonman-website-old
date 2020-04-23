@@ -14,15 +14,19 @@ const Blog = ({ data }) => {
 
     return (
         <main>
-            <Head />
+            <Head
+              siteTitle="Vyron Vasileiadis"
+              pageTitle={title}
+              siteDescription={details}
+            />
             <GlobalStyle />
             <BlogHeader
               title={title}
-              intro={intro} 
+              intro={intro}
               details={details}
-              backToMain={backToMain} 
+              backToMain={backToMain}
             />
-            <BlogBody 
+            <BlogBody
               posts={posts}
             />
         </main>

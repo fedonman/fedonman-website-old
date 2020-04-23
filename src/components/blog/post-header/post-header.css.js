@@ -45,6 +45,6 @@ export const TagItem = styled.li`
 
 export const PostTitle = styled.p`
   font-family: 'Lora', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 `;

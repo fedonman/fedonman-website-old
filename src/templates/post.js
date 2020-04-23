@@ -11,12 +11,17 @@ class PostTemplate extends React.Component {
   render() {
     // const { title, subtitle } = this.props.data.site.siteMetadata
     const post = this.props.data.markdownRemark
-    const { title: postTitle, description: postDescription } = post.frontmatter
+    const { title, description, preview } = post.frontmatter
     // const description = postDescription !== null ? postDescription : subtitle
 
     return (
       <article>
-        <Head pageTitle={postTitle} />
+        <Head
+          siteTitle="Digital Stories"
+          pageTitle={title}
+          siteDescription={description}
+          imageUrl={preview.publicURL}
+        />
         <GlobalStyle />
         <PostHeader post={post} />
         <PostBody html={post.html}/>
@@ -41,6 +46,9 @@ export const pageQuery = graphql`
         tags
         date
         description
+        preview {
+          publicURL
+        }
       }
     }
   }
