@@ -11,6 +11,7 @@ const Index = ({ data }) => {
   const loopArray = Array(loops)
     .fill(0)
     .map((e, i) => i);
+
   return (
     <Layout flow="normal">
       <Section

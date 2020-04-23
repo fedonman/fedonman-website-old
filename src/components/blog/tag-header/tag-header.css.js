@@ -18,4 +18,5 @@ export const Title = styled.h1`
   font-family: "Lora", serif;
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
 `;

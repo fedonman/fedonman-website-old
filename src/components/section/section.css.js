@@ -15,17 +15,11 @@ export const Inner = styled.div`
   height: 100%;
   min-height: 260px;
   padding: 0 1.5rem;
-  ${props => {
-    if (typeof window !== 'undefined' && window.CSS.supports('background-attachment', 'fixed') && props.backgroundImage) {
-      return css`
-        background-position: 50% 50%;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 12rem auto;
-        background-image: url(${props.backgroundImage});
-      `;
-    }
-  }}
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 12rem auto;
+  background-image: url(${props => props.backgroundImage});
   display: flex;
   flex-direction: column;
   justify-content: center;

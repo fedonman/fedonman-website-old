@@ -86,4 +86,4 @@ A cool new feature for data annotators. Right now, this supports image classific
 
 This is just an overview of the options we are having with new Azure Machine Learning Studio. It's pretty clear that the Azure team is going to get all the ML related services under one umbrella. Let's discuss some cool use cases and tips on using these services in next blog posts.
 
-Happy coding! :monkey:
+Happy coding! 👾
