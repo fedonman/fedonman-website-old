@@ -20,7 +20,7 @@ class PostTemplate extends React.Component {
           siteTitle="Digital Stories"
           pageTitle={title}
           siteDescription={description}
-          imageUrl={preview.publicURL}
+          imageUrl={previw ? preview.publicURL : null}
         />
         <GlobalStyle />
         <PostHeader post={post} />
