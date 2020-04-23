@@ -2,7 +2,7 @@
 title: Handling data sources on Azure Machine Learning
 date: "2020-04-20"
 layout: post
-draft: false
+draft: true
 path: "/posts/handling-data-sources-on-azure-machine-learning/"
 tags:
   - "Microsoft Azure"

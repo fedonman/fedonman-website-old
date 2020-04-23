@@ -16,7 +16,6 @@ export const Header = styled.header`
 export const Title = styled.h1`
   color: ${TEXT_COLOR};
   font-family: "Lora", serif;
-  font-size: 3.5rem;
-  text-align: left;
-  width: 80%;
+  font-size: 3rem;
+  font-weight: 700;
 `;
