@@ -25,7 +25,7 @@
 
 ```bash
 # Download
-git clone my-site git@github.com:fedonman/fedonman-website.git
+git clone my-site https://github.com/fedonman/fedonman-website.git
 
 # Install dependencies
 cd my-site
