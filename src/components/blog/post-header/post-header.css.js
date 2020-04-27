@@ -49,3 +49,23 @@ export const PostTitle = styled.p`
   font-weight: 700;
   text-align: center;
 `;
+
+export const Back = styled.p`
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 20px;
+  text-transform: lowercase;
+
+  a {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+`

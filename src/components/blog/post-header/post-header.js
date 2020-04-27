@@ -4,13 +4,18 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import moment from 'moment';
 
-import { Header, PostTitle, PostMeta, Time, TagList, TagItem } from './post-header.css';
+import { Header, PostTitle, PostMeta, Time, TagList, TagItem, Back } from './post-header.css';
 
 const PostHeader = ({ post }) => {
   const { title, date, tags } = post.frontmatter;
   const { slug, tagSlugs } = post.fields;
   return (
     <Header>
+      <Back>
+        <Link to='/blog'>
+          Back to blog
+        </Link>
+      </Back>
       <PostMeta>
         <Time dateTime={moment(date).format('YYYY-MM-DD')}>
           {moment(date).format('MMMM YYYY')}
