@@ -19,8 +19,10 @@ The staggering speed of the 48-hour deadline creates a frenzy and an intense foc
 
 The process is not only swift and accelerated but also highly democratic and friction-less. The [Slack](https://slack.com) platform provided an easy, smooth interaction where all participants could directly and fluidly interact with one another in over 5,000 channels!
 
-Special thanksgiving is reserved for all organizers from European Commission and partner organizations. They did a wonderful job making this happen.
+Special thanksgiving is reserved for all organizers from European Commission, partners and ambassandors. They did a wonderful job making this pan-european event happen.
 
-All in all, it was a pleasure to spend this amazing weekend around such a melting pot of talent and a great honor to be a mentor. I am waiting impatiently for the awards ceremony on Thursday the 30th of April. Tune in to [EUvsVirus Facebook page](https://www.facebook.com/EUvsVirus/) for the live session!
+All in all, it was a pleasure to spend this amazing weekend around such a melting pot of talent and a great honor to be a mentor. I interacted with countless expert teams offering guidance on web development, cloud computing and deep learning. 
+
+I am waiting impatiently for the awards ceremony and the announcement of the winners on Thursday the 30th of April. Tune in to [EUvsVirus Facebook page](https://www.facebook.com/EUvsVirus/) for the live session!
 
 ![EUvsVirus Hackathon Banner](./euvsvirus.png)
