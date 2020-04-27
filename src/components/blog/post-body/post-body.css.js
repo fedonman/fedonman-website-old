@@ -5,11 +5,49 @@ import { PRIMARY_COLOR } from 'constants/theme';
 
 
 export const Body = styled.main`
-  width: 60%;
-  margin: 0 auto;
-  padding: 6.25rem 0;
+  /* margin: 0; */
+  padding: 6.25rem 3rem;
   font-family: 'Montserrat';
   text-align: justify;
+
+  ${MEDIA.XL`
+    padding: 6.25rem 2.5rem;
+  `};
+
+  ${MEDIA.DESKTOP`
+    padding: 6.25rem 2rem;
+  `};
+
+  ${MEDIA.TABLET`
+    padding: 6.25rem 1.5rem;
+  `};
+
+  ${MEDIA.PHONE`
+    padding: 6.25rem 1rem;
+  `};
+
+  h1, h2, h3, h4, h5, h6, p, ul {
+    max-width: 960px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    ${MEDIA.XL`
+      width: 70%;
+    `};
+
+    ${MEDIA.DESKTOP`
+      width: 80%;
+    `};
+
+    ${MEDIA.TABLET`
+      width: 90%;
+    `};
+
+    ${MEDIA.PHONE`
+      width: 100%;
+    `};
+  }
 
   h2 {
     font-size: 1.8rem;
@@ -24,8 +62,7 @@ export const Body = styled.main`
   }
 
   p {
-    /* text-align: justify; */
-    font-size: 1.3rem;
+    font-size: 1.275rem;
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 2rem;
@@ -47,15 +84,22 @@ export const Body = styled.main`
   }
 
   ul {
-    font-size: 1.3rem;
+    font-size: 1.275rem;
     line-height: 1.4;
-    /* list-style: disc inside; */
     margin-top: -1rem;
     margin-bottom: 2rem;
   }
 
   ul li {
     margin-bottom: 1rem;
+  }
+
+  .bulleted ul {
+    list-style: disclosure-closed;
+  }
+
+  .bulleted ul li {
+    margin-left: 2rem;
   }
 
   .gatsby-highlight {
@@ -67,18 +111,7 @@ export const Body = styled.main`
   }
 
   figcaption {
+    margin-top: 0.4rem;
     text-align: center;
   }
-
-  ${MEDIA.XL`
-    width: 70%;
-  `};
-
-  ${MEDIA.DESKTOP`
-    width: 80%;
-  `};
-
-  ${MEDIA.TABLET`
-    width: 90%;
-  `};
 `;

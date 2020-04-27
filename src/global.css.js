@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { PRIMARY_COLOR, TEXT_COLOR } from 'constants/theme';
+import MEDIA from 'helpers/mediaTemplates';
 import * as fonts from './typography';
 
 export default createGlobalStyle`
@@ -17,9 +18,28 @@ export default createGlobalStyle`
 
   html {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    ${MEDIA.XL`
+      font-size: 15px;
+    `};
+
+    ${MEDIA.DESKTOP`
+      font-size: 14px;
+    `};
+
+    ${MEDIA.TABLET`
+      font-size: 13px;
+    `};
+
+    ${MEDIA.PHONE`
+      font-size: 12px;
+    `};
   }
 
-  html, body, div, span, applet, object, iframe,
+  body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp,
