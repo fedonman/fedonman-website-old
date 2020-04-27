@@ -7,11 +7,13 @@ path: "/posts/mentoring-at-euvsvirus-hackathon/"
 tags:
   - "Hackathon"
   - "Mentoring"
-description: "EUvsVirus Hackathon just completed with the absolutely amazing support of more than 500 volunteers and 1,500 mentors which brought together more than 20,000 participants and produced more than 2,100 projects."
+description: "EUvsVirus Hackathon just completed with the absolutely amazing support of more than 500 volunteers and 1,500 mentors."
 preview: "euvsvirus.png"
 ---
 
 [EUvsVirus](https://euvsvirus.org/) hackathon just completed with the amazing support of more than 500 volunteers and 1,500 mentors which brought together more than 20,000 participants and produced more than 2,100 projects. People from different countries, backgrounds, and professions who would have otherwise never met, came together and blended through the magnetic calling power of common interest.
+
+![The official EUvsVirus Hackathon banner](./euvsvirus.png)
 
 I love hackathons because they are very creative, fast, confusing, and powerful. It is a collaborative space where ideas are born and like-minded people come together in rapid agile-mode and produce in 48 hours or less highly innovative solutions.
 
@@ -19,10 +21,10 @@ The staggering speed of the 48-hour deadline creates a frenzy and an intense foc
 
 The process is not only swift and accelerated but also highly democratic and friction-less. The [Slack](https://slack.com) platform provided an easy, smooth interaction where all participants could directly and fluidly interact with one another in over 5,000 channels!
 
+![Slack provided an uninterrupted collaboration](./euvsvirus-01.png)
+
 Special thanksgiving is reserved for all organizers from European Commission, partners and ambassandors. They did a wonderful job making this pan-european event happen.
 
 All in all, it was a pleasure to spend this amazing weekend around such a melting pot of talent and a great honor to be a mentor. I interacted with countless expert teams offering guidance on web development, cloud computing and deep learning. 
 
 I am waiting impatiently for the awards ceremony and the announcement of the winners on Thursday the 30th of April. Tune in to [EUvsVirus Facebook page](https://www.facebook.com/EUvsVirus/) for the live session!
-
-![EUvsVirus Hackathon Banner](./euvsvirus.png)
