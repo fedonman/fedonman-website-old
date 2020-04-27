@@ -17,7 +17,7 @@ class PostTemplate extends React.Component {
     return (
       <article>
         <Head
-          siteTitle="Digital Stories"
+          siteTitle="Quantum Stories"
           pageTitle={title}
           siteDescription={description}
           imageUrl={preview ? preview.publicURL : null}
