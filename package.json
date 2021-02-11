@@ -50,7 +50,7 @@
     "intersection-observer": "^0.8.0",
     "loadash": "^1.0.0",
     "moment": "^2.24.0",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.21.0",
     "prop-types": "*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
