@@ -36,7 +36,6 @@ The key features of Azure Quantum include:
   
 </span>
 
-
 Azure Quantum is currently in private preview. You can request early access, although it is highly unlikely you will get it. (yes, i tried many times! 😅)
 
 Happy coding! 👾
