@@ -48,7 +48,7 @@
     "gatsby-transformer-sharp": "^2.4.4",
     "intersection-observer": "^0.8.0",
     "loadash": "^1.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prismjs": "^1.27.0",
     "prop-types": "*",
     "react": "^16.13.1",
